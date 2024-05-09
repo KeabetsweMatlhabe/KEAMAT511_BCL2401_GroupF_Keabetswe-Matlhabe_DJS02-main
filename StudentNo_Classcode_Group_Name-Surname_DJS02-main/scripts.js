@@ -12,5 +12,8 @@ form.addEventListener("submit", (event) => {
     console.error("Error: Non-numeric input provided");
 
 
-  }
+  } else if (parseInt(divider) === 0) { // checiking if divider equal 0.
+    result.innerText = "Division not performed. Invalid number provided. Try again";
+    console.error("Error: Division by zero");
+
 });
